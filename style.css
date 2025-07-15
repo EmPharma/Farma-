@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card.aprobado { background-color: #4caf50; } /* verde */
+.card.cursando { background-color: #9c27b0; } /* morado */
+.card.pendiente { background-color: #9e9e9e; } /* gris */
+
+.card h3 { margin: 0 0 8px; }
+.card p { margin: 4px 0; }
